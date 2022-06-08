@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://dmitkate.github.io/goTeem-project",
+  "homepage": "https://dmitkate.github.io/goteem-project",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goTeem-project/"
+    "build": "parcel build src/*.html --public-url /goteem-project/"
   },
   "repository": {
     "type": "git",
