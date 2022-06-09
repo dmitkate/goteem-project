@@ -1,0 +1,27 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul
+{
+   margin: 0px;
+   padding: 0px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-text-color);
+    background-color: var(--page-color);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.list {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+
