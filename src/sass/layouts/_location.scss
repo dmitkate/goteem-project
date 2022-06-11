@@ -230,7 +230,10 @@
         &:hover, &:focus {
             background-color: #C7133E;
             }
-        
+        @media screen and (min-width:768px) {
+            margin-bottom: 0;
+            margin-right: 15px;
+        }
     }
 
 .location__btn--light {
