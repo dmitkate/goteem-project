@@ -1,0 +1,132 @@
+.location {
+    background-image: linear-gradient(to bottom,
+            #ffffff 22%,
+            #FFF5F6 22%,
+            #FFF5F6 78%,
+        );
+
+    &__content {
+        background-color: #fff;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+        padding: 40px 32px 40px 32px;
+        margin-bottom: 20px;
+    }
+
+    &__category {
+        color: #fff;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        border-radius: 4px;
+        height: 16px;
+        margin-bottom: 20px;
+    }
+
+    &__category--cafe {
+        background-color: #F0D1A5;
+        width: 80px;
+
+    }
+
+    &__category--foodtruck {
+        background-color: #C2E297;
+        width: 130px;
+    }
+
+
+    &__city {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
+        color: #000;
+        margin-bottom: 8px;
+    }
+
+    &__adress {
+        color: var(--paragraf-grey);
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 24px;
+
+        &::after {
+            content: '';
+            display: block;
+            background-color: #E1E1E1;
+            height: 1px;
+            width: 216px;
+            // position: absolute;
+            // left: 0;
+            // bottom: -26px;
+        }
+    }
+
+    &__workingdays {
+        color: #000;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
+    }
+
+    &__workingtime {
+        color: var(--ico-bg);
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
+        margin-bottom: 8px;
+    }
+
+    &__phone {
+        color: var(--paragraf-grey);
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+        margin-top: 24px;
+
+        &::before {
+            content: '';
+            display: block;
+            background-color: #E1E1E1;
+            height: 1px;
+            width: 216px;
+        }
+    }
+
+    &__mail {
+        color: var(--paragraf-grey);
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    &__btn {
+        display: block;
+        width: 161px;
+        height: 44px;
+        border-radius: 22px;
+        font-weight: 700;
+        text-align: center;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    &__btn--dark {
+        color: #fff;
+        background-color: #D41342;
+        margin-bottom: 10px;
+    }
+
+    &__btn--light {
+        color: var(--text-accent);
+        background-color: #fff;
+    }
+}
