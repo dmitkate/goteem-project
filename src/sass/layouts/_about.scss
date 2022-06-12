@@ -9,9 +9,10 @@
         background-image: url(./../images/about-bg-mob.png);
         background-size: 100%;
         background-repeat: no-repeat;
-        background-position: bottom 220px center;
+        background-position: 0 75%;
         @media (min-resolution: 2dppx) {
         background-image: url(./../images/about-bg-mob-2x.png);
+        background-position: 0 75%;
         }
     }
     @media screen and (min-width: 1280px) {
@@ -120,8 +121,8 @@
 
 }
 &__icon {
-    width: 4.5px;
-    height: 8px;
+    width: 7px;
+    height: 10px;
     margin-left: 14px;
     fill: var(--text-accent);
 }
@@ -150,6 +151,7 @@
     padding: 30px 10px;
     z-index: 105;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 20px;
     @media screen and (min-width: 768px) {
         padding: 115px 105px;
         width: 700px;
