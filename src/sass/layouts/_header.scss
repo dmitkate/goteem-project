@@ -417,8 +417,7 @@
 }
 
 .checkbox-modal:checked+.modal-header_check-label::before {
-    background-color: rgba(199, 19, 62, 50)
-    background-image: url(../images/icon/symbol-defs.svg#icon-check1);
+    background-color: rgba(199, 19, 62, 0.5)
     background-repeat: no-repeat;
     background-position: center;
     border: none;
