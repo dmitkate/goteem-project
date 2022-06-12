@@ -1,5 +1,7 @@
 .hero {
+  position: relative;
   height: 502px;
+  background-color: var(--hero-bg);
   @media screen and (min-width: 768px) {
     height: 416px;
   }
@@ -26,10 +28,6 @@
 .hero__wrap {
   max-height: 100%;
   display: flex;
-}
-
-.bg {
-  background-color: var(--hero-bg);
 }
 
 .hero__bg-circle {
