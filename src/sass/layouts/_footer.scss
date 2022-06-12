@@ -93,13 +93,20 @@
 .footer-colpywrite {
   padding-bottom: 20px;
   padding-top: 16px;
+  //
+}
+.footer-border {
   border-top: 1px solid var(--border-in);
 }
 .footer-colpywrite__text {
+  width: 160px;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
   text-align: center;
-
   color: var(--paragraf-grey);
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
 }
