@@ -417,7 +417,8 @@
 }
 
 .checkbox-modal:checked+.modal-header_check-label::before {
-    background-color: rgba(199, 19, 62, 0.5)
+    background-color: #c7133e80;
+    background-image: url(../images/advantages3.png);
     background-repeat: no-repeat;
     background-position: center;
     border: none;
