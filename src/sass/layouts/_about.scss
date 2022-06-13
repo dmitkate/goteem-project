@@ -45,7 +45,7 @@
   &__label {
     display: block;
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 
     @media screen and (min-width: 768px) {
       transform: translate(0px, 100%);
@@ -61,7 +61,19 @@
   }
   &__header {
     text-align: center;
-    padding-top: 16px;
+
+    margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+      transform: translate(0px, 100%);
+      opacity: 0;
+      transition: all 0.8s ease 0s;
+    }
+  }
+  &__header.active-animate {
+    @media screen and (min-width: 768px) {
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
   }
   &-text {
     margin-top: 40px;
@@ -126,7 +138,6 @@
         transform: translate(0px, 0px);
       }
     }
-
     &__button {
       display: inline-flex;
       align-items: center;
@@ -228,25 +239,25 @@
   color: var(--text-main);
   display: block;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   @media screen and (min-width: 768px) {
     font-size: 25px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 30px;
-    margin-bottom: 30px;
   }
 }
 .about-modal__header {
   text-align: center;
   color: var(--text-main);
   font-size: 24px;
-  padding-top: 16px;
+  margin-bottom: 16px;
   @media screen and (min-width: 768px) {
     font-size: 38px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 48px;
+    margin-bottom: 30px;
   }
 }
 .about-modal__paragraf {
