@@ -223,11 +223,11 @@
   }
 }
 
-.hero__points-item:after {
+.hero__points-item:before {
   content: '';
   width: 16px;
   height: 16px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 50%;
   display: block;
   position: absolute;
@@ -240,7 +240,6 @@
 }
 
 .hero__points-amount {
-  z-index: 1;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
