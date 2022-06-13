@@ -246,7 +246,255 @@
 
 .vector {
     fill: #ffffff;
+    margin-left: 13px;
 }
 .vector-light{
-    fill: var(--text-accent)
+    fill: var(--text-accent);
+    margin-left: 13px;
+}
+/*-------------------modal franchise----------------*/
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.modal-franchise{
+    width: 90%;
+    background-color: #FFF5F6;
+    padding: 28px;
+    overflow: scroll;
+    border-radius: 24px;
+    position: relative;
+    @media screen and (min-width:320px) {
+        width: 320px;
+        height: 650px;
+    }
+    @media screen and (min-width:768px) {
+        width: 400px;
+        height: 650px;
+    }
+    @media screen and (min-width:1280px) {
+        width: 500px;
+        height: 600px;
+    }
+}
+.franchise-close-btn{
+    width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        padding: 6px;
+}
+.franchise__title{
+    font-family: 'Titan One';
+        font-size: 34px;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #D41443;
+        margin-bottom: 20px;
+}
+.franchise__text{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.62;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 20px;
+        @media screen and (min-width:1280px) {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+}
+.franchise__list{
+    margin-bottom: 20px;
+    @media screen and (min-width:1280px) {
+        display: flex;
+        margin-left: -20px;
+}}
+.franchise__item{
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1280px) {
+    width: calc(100% / 2 - 20px);
+    margin-left: 20px;
+    margin-bottom: 0;
+    }
+}
+.franchise__content{
+    background-color: #fff;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding: 16px;
+}
+.franchise__category {
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border-radius: 4px;
+    height: 16px;
+    margin-bottom: 20px;
+    display: table;
+    vertical-align: middle;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+.franchise__category--cafe {
+    background-color: #F0D1A5;
+    width: 80px;
+
+}
+
+.franchise__category--foodtruck {
+    background-color: #C2E297;
+    width: 130px;
+}
+.franchise__description{
+        color: var(--paragraf-grey);
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    @media screen and (min-width){
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}
+.franchise__price{
+    font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.13;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    
+        color: #FFA5BA;
+        
+}
+.franchise__call{
+    font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1.13;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    
+        color: #FFA5BA;
+        margin-bottom: 20px;
+}
+.franchise__phone{
+    display: block;
+    color: var(--paragraf-grey);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.5;
+        text-decoration: none;
+        text-align: center;
+}
+
+/*-----------------modal location------------*/
+.modal-location {
+    width: 90%;
+    background-color: #FFF5F6;
+    padding: 28px;
+    overflow: scroll;
+    border-radius: 24px;
+    position: relative;
+
+    @media screen and (min-width:320px) {
+            width: 320px;
+            height: 650px;
+        }
+    
+        @media screen and (min-width:768px) {
+            width: 400px;
+            height: 650px;
+        }
+    
+        @media screen and (min-width:1280px) {
+            width: 500px;
+            height: 600px;
+        }
+}
+.map-close-btn{
+    width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        padding: 6px;
+}
+.map__title{
+    font-family: 'Titan One';
+        font-size: 34px;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #D41443;
+        margin-bottom: 20px;
+}
+.map__list{
+    list-style-type: disc;
+    list-style: black ;
+}
+.map__item{
+    background-color: #fff;
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
+
+}
+.map__content{
+    background-color: #fff;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+        padding: 16px;
+}
+.map__city{
+    font-weight: 500;
+        font-size: 18px;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
+        text-decoration: underline;
+        color: #000;
+}
+.map__text{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #000;
+}
+.map__adress{
+    color: var(--paragraf-grey);
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+    
+}
+.map__map{
+    width: 100%;
+    height: auto;
+    
 }
