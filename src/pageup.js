@@ -47,8 +47,8 @@ if (animItems.length > 0) {
     }
     function offset(el) {
         const rect = el.getBoundingClientRect(),
-            scrollLeft = window.scrollX || document.documentElement.scrollLeft;
+            scrollLeft = window.scrollX || document.documentElement.scrollLeft,
             scrollTop = window.scrollY || document.documentElement.scrollTop;
-        return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+        return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
     }
 }
