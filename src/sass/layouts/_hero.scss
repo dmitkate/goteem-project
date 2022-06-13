@@ -14,13 +14,9 @@
     height: 502px;
     @media screen and (min-width: 768px) {
       height: 416px;
-      padding-left: 32px;
-      padding-right: 32px;
     }
     @media screen and (min-width: 1280px) {
       height: 664px;
-      padding-left: 16px;
-      padding-right: 16px;
     }
   }
 }
@@ -93,11 +89,12 @@
 }
 
 .hero__title-text {
-  position: absolute;
+  position: relative;
+
   width: 218px;
   font-weight: 400;
   font-family: 'Titan One';
-  font-style: normal;
+
   font-size: 26px;
   line-height: 1.15;
   letter-spacing: 0.04em;
@@ -105,7 +102,7 @@
   color: #ffffff;
   @media screen and (min-width: 768px) {
     z-index: 0;
-    position: static;
+    //position: static;
     width: 162px;
     font-size: 22px;
     line-height: 1.13;
@@ -113,21 +110,26 @@
   @media screen and (min-width: 1280px) {
     width: 278px;
     z-index: 0;
-    position: static;
+    //position: static;
     font-size: 38px;
     line-height: 1.16;
   }
 }
 
 .hero__title-big {
+  position: absolute;
+  font-family: 'Titan One';
+  text-transform: uppercase;
   font-size: 48px;
   line-height: 0.95;
   color: #d41443;
   @media screen and (min-width: 768px) {
+    position: static;
     font-size: 35px;
     line-height: 0.8;
   }
   @media screen and (min-width: 1280px) {
+    position: static;
     font-size: 62px;
     line-height: 0.9;
   }
