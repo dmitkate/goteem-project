@@ -177,6 +177,7 @@
 .backdrop-about {
   opacity: 1;
   z-index: 101;
+  
 }
 .backdrop-about.is-hidden {
   opacity: 0;
@@ -186,11 +187,12 @@
   transform: translate(-50%, -50%) scale(1.1);
 }
 .about-modal {
+  overflow: auto;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  height: auto;
+  max-height: 100%;
   background-color: #e17992;
   width: 300px;
   padding: 30px 10px;
