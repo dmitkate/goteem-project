@@ -220,7 +220,7 @@
   &:first-child {
     margin-bottom: 16px;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -333,7 +333,6 @@
 }
 
 .hero__info-img {
-  z-index: 1;
   @media screen and (min-width: 768px) {
     height: 154px;
   }
