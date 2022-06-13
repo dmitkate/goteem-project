@@ -1,15 +1,19 @@
 .advantages {
     background-color: var(--section-rose);
     // padding-bottom: 80px;
+    
     &__list {
         list-style: none;
         
         @media screen and (min-width: 768px) {
             display: flex;
             padding-right: 150px;
+            // padding-top: 84px;
         }
         @media screen and (min-width: 1280px) {
             padding-right: 100px;
+            // padding-top: 21px;
+            // padding-bottom: 120px;
         }
         
         
