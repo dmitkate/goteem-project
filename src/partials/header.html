@@ -1,0 +1,172 @@
+<header class="header">
+  <div class="container">
+    <nav class="site-nav">
+      <div class="site-nav_short-menu">
+        <a href="./index.html" class="site-nav_logo-link link">
+          <img
+            srcset="./images/header-logo.png 1x, ./images/header-logo-2x.png 2x"
+            src="./images/header-logo.png"
+            alt="company logo"
+            class="site-nav_logo"
+          />
+        </a>
+        <button type="button" class="site-nav_btn-burger">
+          <svg width="20" height="20" class="site-nav_svg">
+            <use
+              href="./images/icon/symbol-defs.svg#open-mob-menu"
+              class="site-nav_icon-open"
+            ></use>
+          </svg>
+        </button>
+        <div class="desktop-menu">
+          <ul class="desktop-menu_list list">
+            <li class="desktop-menu_item">
+              <a href="" class="desktop-menu_link link current">Home</a>
+            </li>
+            <li class="desktop-menu_item">
+              <a href="#about" class="desktop-menu_link link">About us</a>
+            </li>
+            <li class="desktop-menu_item">
+              <a href="#how-made " class="desktop-menu_link link"
+                >How it’s made?</a
+              >
+            </li>
+            <li class="desktop-menu_item">
+              <a href="#products " class="desktop-menu_link link"
+                >Our products</a
+              >
+            </li>
+            <li class="desktop-menu_item">
+              <a href="#contact" class="desktop-menu_link link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="tab-menu_btn" header-modal-open>
+          Buy now
+          <svg width="5" height="8" class="tab-menu_btn-icon">
+            <use href="./images/icon/symbol-defs.svg#icon-button-vector"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden">
+        <button type="button" class="site-nav_btn-cross">
+          <svg width="14" height="14" class="site-nav_svg">
+            <use
+              href="./images/icon/symbol-defs.svg#icon-close_40px"
+              class="site-nav_icon-close"
+            ></use>
+          </svg></button
+        ><button type="button" class="mob-menu_btn" header-modal-opene>
+          Buy now
+          <svg width="5" height="8" class="mob-menu_btn-icon">
+            <use href="./images/icon/symbol-defs.svg#icon-button-vector"></use>
+          </svg>
+        </button>
+        <div class="mob-menu_wrapper">
+        <span class="mob-menu_span"></span>
+            <a href="" class="mob-menu_link link current">Home</a>
+        
+       <span class="mob-menu_span"></span>
+            <a href="#about" class="mob-menu_link link">About us</a>
+        
+         <span class="mob-menu_span"></span>
+            <a href="#how-made " class="mob-menu_link link">How it’s made?</a>
+          
+          <span class="mob-menu_span"></span>
+            <a href="#products " class="mob-menu_link link">Our products</a>
+         
+         <span class="mob-menu_span"></span>
+            <a href="#contact" class="mob-menu_link link">Contact</a>
+         
+        <span class="mob-menu_span"></span>
+        </div>
+        
+        <!-- <ul class="mob-menu_list list">
+          <li class="mob-menu_item">
+            <a href="" class="mob-menu_link link current">Home</a>
+          </li>
+          <li class="mob-menu_item">
+            <a href="#about" class="mob-menu_link link">About us</a>
+          </li>
+          <li class="mob-menu_item">
+            <a href="#how-made " class="mob-menu_link link">How it’s made?</a>
+          </li>
+          <li class="mob-menu_item">
+            <a href="#products " class="mob-menu_link link">Our products</a>
+          </li>
+          <li class="mob-menu_item">
+            <a href="#contact" class="mob-menu_link link">Contact</a>
+          </li>
+        </ul> -->
+      </div>
+    </nav>
+  </div>
+
+  <div class="overlay-header is-hidden" header-modal>
+    <div class="modal-header">
+      <button type="button" class="modal-header_btn" header-modal-close>
+        <svg width="14" height="14" class="modal-header_icon">
+          <use href="./images/icon/symbol-defs.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+      <p class="modal-header_title">BUY NOW!</p>
+      <form class="modal-header_form">
+        <div class="modal-header_field">
+          <label for="username" class="modal-header_lable">Name</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              class="modal-header_input"
+              placeholder="Enter your name"
+            />
+        </div>
+        <div class="modal-header_field">
+          <label for="user-mail" class="modal-header_lable">E-mail</label>
+            <input
+              type="email"
+              id="user-mail"
+              name="user-mail"
+              class="modal-header_input"
+              placeholder="Enter your E-mail"
+            />
+          </div>
+          <div class="modal-header_field">
+            <label for="user-tel" class="modal-header_lable">Phone</label>
+              <input
+                type="tel"
+                id="user-tel"
+                name="user-tel"
+                class="modal-header_input"
+                placeholder="Enter your phone number"
+              />
+          </div>
+        <div class="modal-header_comment-wrap">
+          <label for="comment" class="modal-header_lable">Wish list</label>
+          <textarea
+            name="comment"
+            id="comment"
+            class="modal-header_comment-form"
+            placeholder="Enter your wishes"
+          ></textarea>
+        </div>
+        <div class="modal-header_check-thumb">
+          <input
+            type="checkbox"
+            class="checkbox-modal visually-hidden"
+            id="check-modal"
+            name="policy-acceptance"
+            value="policy-acceptance"
+          />
+          <label for="check-modal" class="modal-header_check-label"
+            >I agree, this is the best ice cream ever.</label
+          >
+        </div>
+        <button type="submit" class="modal-header_form-button button">
+          Buy
+        </button>
+      </form>
+      </div>
+    </div>
+  </div>
+</header>

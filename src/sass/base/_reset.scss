@@ -5,23 +5,20 @@ h4,
 h5,
 h6,
 p,
-ul
-{
-   margin: 0px;
-   padding: 0px;
+ul {
+  margin: 0px;
+  padding: 0px;
 }
 
-body{
-    font-family: 'DM sans', sans-serif;
-    color: var(--text-main);
-    background-color: var(--section-white);
-    font-size: 16px;
-    line-height: 1.76;
-    letter-spacing: 0.04em;
+body {
+  font-family: 'DM sans', sans-serif;
+  color: var(--text-main);
+  background-color: var(--section-rose);
+  font-size: 16px;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
 }
 .list {
-    list-style-type: none;
-    padding-left: 0px;
+  list-style-type: none;
+  padding-left: 0px;
 }
-
-
