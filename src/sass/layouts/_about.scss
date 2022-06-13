@@ -46,8 +46,22 @@
     display: block;
     text-align: center;
     margin-bottom: 32px;
-  }
-  &__header {
+
+    @media screen and (min-width: 768px) {
+        transform: translate(0px, 100%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
+    }
+    
+}
+&__label.active-animate {
+    @media screen and (min-width: 768px) {
+        transform: translate(0px, 0px);
+    opacity: 1;
+    }
+}
+&__header {
+
     text-align: center;
     padding-top: 16px;
   }
@@ -61,21 +75,31 @@
       padding-right: 146px;
     }
     &__bold {
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 1.62;
-      color: var(--paragraf-black);
-      margin-bottom: 30px;
-      @media screen and (min-width: 768px) {
-        font-size: 14px;
-        line-height: 1.76;
-      }
-      @media screen and (min-width: 1280px) {
-        font-size: 16px;
-        line-height: 1.76;
-        letter-spacing: 0.04em;
-        margin-bottom: 32px;
-      }
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    color: var(--paragraf-black);
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+            font-size: 14px;
+            line-height: 1.76;
+            transform: translate(0px, 100%);
+            opacity: 0;
+            transition: all 0.8s ease 0.3s;
+        }
+        @media screen and (min-width: 1280px) {
+            font-size: 16px;
+            line-height: 1.76;
+            letter-spacing: 0.04em;
+            margin-bottom: 32px;
+        }
+
+    }
+    &__bold.active-animate {
+        @media screen and (min-width: 768px) {
+            opacity: 1;
+            transform: translate(0px, 0px);
+        }
     }
     &__light {
       font-weight: 500;
@@ -89,11 +113,25 @@
         font-size: 14px;
         line-height: 1.76;
         letter-spacing: 0.04em;
-      }
-      @media screen and (min-width: 1280px) {
+
+        transform: translate(0px, 100%);
+        opacity: 0;
+        transition: all 0.8s ease 0.3s;
+    }
+    @media screen and (min-width: 1280px) {
+
         line-height: 1.94;
       }
     }
+
+}
+&__light.active-animate {
+        @media screen and (min-width: 768px) {
+            opacity: 1;
+            transform: translate(0px, 0px);
+        }
+    }
+
     &__button {
       display: inline-flex;
       align-items: center;
