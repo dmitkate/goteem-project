@@ -1,4 +1,4 @@
-<section class="location">
+<section class="location" id="#contact">
     <div class="container">
         <h2 class="visually-hidden">location</h2>
         <ul class="location__list list">
@@ -47,11 +47,12 @@
         </ul>
         <div class="button-block">
         <button class="location__btn location__btn--dark" type="submit" data-modal-location-open>Our Locations 
-            <svg class="vector" width="4" height="8">
+            <svg class="vector" width="5" height="8">
                 <use href="./images/icon/symbol-defs.svg#icon-button-vector"></use>
             </svg>
         </button>
-        <button class="location__btn location__btn--light" type="submit" data-modal-franchise-open>Franchise <svg class="vector-light" width="4" height="8">
+        <button class="location__btn location__btn--light" type="submit" data-modal-franchise-open>Franchise 
+            <svg class="vector-light" width="5" height="8">
             <use href="./images/icon/symbol-defs.svg#icon-button-vector"></use>
         </svg></button>
         </div>
@@ -91,23 +92,45 @@
 </div>
 <div class="backdrop is-hidden" data-modal-location>
     <div class="modal-location">
-        <button class="location-close-btn" type="submit" data-modal-location-close>
+        <button class="map-close-btn" type="submit" data-modal-location-close>
             <svg width="18" height="18" class="modal-close-icon">
                 <use href="./images/icon/symbol-defs.svg#icon-close_40px"></use>
             </svg>
         </button>
-   
-    <h2 class="location__title">Our Locations</h2>
-    <ul>
-        <li>
-            <p>Chicago</p>
-            <a href="https://goo.gl/maps/V4ej4qD6hC5XxMD26"></a>
+    <h2 class="map__title">Our Locations</h2>
+    <ul class="map__list list">
+        <li class="map__item">
+            <div class="map__content">
+                <p class="map__city">Chicago</p>
+                <p class="map__text">We are in Chicago:</p>
+                <address class="map__adress">1660 E 55th St, Chicago, IL 60615, USA</address>
+                <iframe class="map__map"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3486.630935080759!2d-87.58526948248884!3d41.79510607975601!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e296c3af8b38d%3A0xa815bffc27b487d2!2sLiteHouse%20Whole%20Food%20Grill!5e0!3m2!1suk!2sua!4v1655107370546!5m2!1suk!2sua"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>    
         </li>
-        <li>
-            <p>Los Angeles</p>
+        <li class="map__item">
+            <div class="map__content">
+            <p class="map__city">Los Angeles</p>
+            <p class="map__text">Look for us in Los Angeles:</p>
+            <adress class="map__adress">267 S Beverly Dr, Beverly Hills, CA 90212, USA</adress>
+            <iframe class="map__map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22010.857723459903!2d-118.41022566556592!3d34.065015669927156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bbfb87aec65f%3A0x2770785430458c7a!2sUrth%20Caffe%20Beverly%20Hills!5e0!3m2!1suk!2sua!4v1655056872269!5m2!1suk!2sua"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </li>
-        <li>
-            <p>New York</p>
+        <li class="map__item" >
+            <div class="map__content">
+            <p class="map__city">New York</p>
+            <p class="map__text">Our location in New york:</p>
+            <address class="map__adress">701 9th Ave, New York, NY 10019, USA</address>
+            <iframe class="map__map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4116.206231603706!2d-73.99280102562008!3d40.7630253572016!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258513ee7c61f%3A0x4555537fd3694b2c!2sMom&#39;s%20Kitchen%20and%20Bar!5e0!3m2!1sru!2sua!4v1655105828624!5m2!1sru!2sua"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>    
         </li>
     </ul>
     </div>

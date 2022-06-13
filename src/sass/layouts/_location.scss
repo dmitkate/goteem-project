@@ -246,9 +246,11 @@
 
 .vector {
     fill: #ffffff;
+    margin-left: 13px;
 }
 .vector-light{
-    fill: var(--text-accent)
+    fill: var(--text-accent);
+    margin-left: 13px;
 }
 /*-------------------modal franchise----------------*/
 .is-hidden {
@@ -265,8 +267,16 @@
     border-radius: 24px;
     position: relative;
     @media screen and (min-width:320px) {
-        width: 300px;
-        height: 700px;
+        width: 320px;
+        height: 650px;
+    }
+    @media screen and (min-width:768px) {
+        width: 400px;
+        height: 650px;
+    }
+    @media screen and (min-width:1280px) {
+        width: 500px;
+        height: 600px;
     }
 }
 .franchise-close-btn{
@@ -297,13 +307,25 @@
         text-align: center;
         color: #000000;
         margin-bottom: 20px;
+        @media screen and (min-width:1280px) {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
 }
 .franchise__list{
     margin-bottom: 20px;
-}
+    @media screen and (min-width:1280px) {
+        display: flex;
+        margin-left: -20px;
+}}
 .franchise__item{
     &:not(:last-child){
         margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1280px) {
+    width: calc(100% / 2 - 20px);
+    margin-left: 20px;
+    margin-bottom: 0;
     }
 }
 .franchise__content{
@@ -347,6 +369,10 @@
         font-size: 12px;
         line-height: 1.5;
         margin-bottom: 10px;
+    @media screen and (min-width){
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
 }
 .franchise__price{
     font-family: 'Titan One';
@@ -394,11 +420,21 @@
     position: relative;
 
     @media screen and (min-width:320px) {
-        width: 300px;
-        height: 700px;
-    }
+            width: 320px;
+            height: 650px;
+        }
+    
+        @media screen and (min-width:768px) {
+            width: 400px;
+            height: 650px;
+        }
+    
+        @media screen and (min-width:1280px) {
+            width: 500px;
+            height: 600px;
+        }
 }
-.location-close-btn{
+.map-close-btn{
     width: 30px;
         height: 30px;
         border-radius: 50%;
@@ -409,7 +445,7 @@
         right: 8px;
         padding: 6px;
 }
-.location__title{
+.map__title{
     font-family: 'Titan One';
         font-size: 34px;
         line-height: 1.15;
@@ -418,4 +454,47 @@
         text-align: center;
         color: #D41443;
         margin-bottom: 20px;
+}
+.map__list{
+    list-style-type: disc;
+    list-style: black ;
+}
+.map__item{
+    background-color: #fff;
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
+
+}
+.map__content{
+    background-color: #fff;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+        padding: 16px;
+}
+.map__city{
+    font-weight: 500;
+        font-size: 18px;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
+        text-decoration: underline;
+        color: #000;
+}
+.map__text{
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: #000;
+}
+.map__adress{
+    color: var(--paragraf-grey);
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+    
+}
+.map__map{
+    width: 100%;
+    height: auto;
+    
 }
