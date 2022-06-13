@@ -1,9 +1,13 @@
-<section class="products" #products>
+<section class="products" id="products">
     <div class="container">
 
-        <label class="products__lable section-header">100% natural
+        <!-- <label class="products__lable section-header">100% natural
             <h2 class="products__title section-header__bold">products</h2>
-        </label>
+        </label> -->
+
+        <p class="products__lable section-header">100% natural</p>
+        <h2 class="products__title section-header__bold">products</h2>
+        
 
         <ul class="products-list list">
 
@@ -15,20 +19,12 @@
                         sed do eiusmod tempor incididunt ut labore et
                     </p>
                 </div> 
-                <button type="button" class="product__btn">
+                <button type="button" class="product__btn" data-modal-open-products>
                     <svg class="btn-icon" width="10" height="10">
                         <use href="./images/icon/symbol-defs.svg#icon-arrow-right2"></use>
                     </svg>
-                </button> 
-<!--                 
-                <p class="products__full-description">
-                    is a sweetened frozen food typically eaten as a snack or dessert. 
-                    It may be made from milk or cream and is flavoured with a sweetener, 
-                    either sugar or an alternative, and a spice.
-                </p> -->
-            </li>
-
-            
+                </button>
+            </li>            
 
             <li class="products-item second-card">
                 <div class="products-item_content">
@@ -38,7 +34,7 @@
                         sed do eiusmod tempor incididunt ut labore et
                     </p>
                 </div>
-                <button type="button" class="product__btn">
+                <button type="button" class="product__btn" data-modal-open-products-second>
                     <svg class="btn-icon" width="10" height="10">
                         <use href="./images/icon/symbol-defs.svg#icon-arrow-right2"></use>
                     </svg>
@@ -53,7 +49,7 @@
                         sed do eiusmod tempor incididunt ut labore et
                     </p>
                 </div>
-                <button type="button" class="product__btn">
+                <button type="button" class="product__btn" data-modal-open-products-third>
                     <svg class="btn-icon" width="10" height="10">
                         <use href="./images/icon/symbol-defs.svg#icon-arrow-right2"></use>
                     </svg>
@@ -61,6 +57,31 @@
             </li>
 
         </ul>
+
+        <!-- <div class="modal-products is-hidden" data-modal-products>
+            <p class="products__full-description ">
+                is a sweetened frozen food typically eaten as a snack or dessert. 
+                It may be made from milk or cream and is flavoured with a sweetener, 
+                either sugar or an alternative, and a spice.
+            </p>
+        </div> -->
+<!-- 
+        <div class="modal-products is-hidden" data-modal-products-second>
+            <p class="products__full-description ">
+                Iced coffee is a coffee beverage served cold. It may be prepared either 
+                by brewing coffee normally and then serving it over ice or in cold milk,
+                or by brewing the coffee cold. 
+            </p>
+        </div>
+
+        <div class="modal-products is-hidden" data-modal-open-products-third>
+            <p class="products__full-description ">
+                A milkshake  is a sweet beverage made by blending milk, ice cream, 
+                and flavorings or sweeteners such as butterscotch, caramel sauce, 
+                chocolate syrup, fruit syrup, or whole fruit into a thick, sweet, cold mixture.
+            </p>
+        </div> -->
+
     </div>
 
 </section>
