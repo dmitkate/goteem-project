@@ -13,7 +13,7 @@
   &-wrapper {
     margin: 0 auto;
     @media screen and (max-width: 767px) {
-    max-width: 320px;
+    max-width: 767px;
     background-image: url(./../images/about-bg-mob.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -36,7 +36,10 @@
   }
   
   &-main {
+    max-width: 280px;
+    margin: 0 auto;
     @media screen and (min-width: 768px) {
+      max-width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -200,7 +203,7 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   max-height: 100%;
-  background-color: #e17992;
+  background-color: var(--href-top);
   width: 300px;
   padding: 30px 10px;
   z-index: 105;
