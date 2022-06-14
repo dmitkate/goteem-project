@@ -1,2 +1,2 @@
 !function(){var o={openLocationBtn:document.querySelector("[data-modal-location-open]"),closeLocationBtn:document.querySelector("[data-modal-location-close]"),location:document.querySelector("[data-modal-location]"),body:document.querySelector("body")};function t(){o.location.classList.toggle("is-hidden"),o.body.classList.toggle("no-scroll")}o.openLocationBtn.addEventListener("click",t),o.closeLocationBtn.addEventListener("click",t)}();
-//# sourceMappingURL=index.20815526.js.map
+//# sourceMappingURL=index.5fe1cf90.js.map
