@@ -203,7 +203,7 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   max-height: 100%;
-  background-color: #e17992;
+  background-color: var(--href-top);
   width: 300px;
   padding: 30px 10px;
   z-index: 105;
