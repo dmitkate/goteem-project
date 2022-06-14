@@ -1,15 +1,21 @@
 .about {
   padding-bottom: 40px;
   padding-top: 40px;
-
   background-color: var(--section-rose);
   @media screen and (min-width: 768px) {
     padding-top: 20px;
     padding-bottom: 60px;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  &-wrapper {
+    margin: 0 auto;
+    @media screen and (max-width: 767px) {
+    max-width: 320px;
     background-image: url(./../images/about-bg-mob.png);
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: 0 75%;
     @media (min-resolution: 2dppx) {
@@ -18,8 +24,7 @@
     }
   }
   @media screen and (min-width: 1280px) {
-    padding-bottom: 60px;
-    padding-top: 60px;
+    width: 1280px;
     background-image: url(./../images/about-bg.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -28,6 +33,8 @@
       background-image: url(./../images/about-bg-2x.png);
     }
   }
+  }
+  
   &-main {
     @media screen and (min-width: 768px) {
       display: flex;
@@ -77,12 +84,12 @@
   }
   &-text {
     margin-top: 40px;
-    padding-right: 60px;
+    width: 220px;
     @media screen and (min-width: 768px) {
-      padding-right: 0;
+      width: 334px;
     }
     @media screen and (min-width: 1280px) {
-      padding-right: 146px;
+      width: 463px;
     }
     &__bold {
       font-weight: 500;
