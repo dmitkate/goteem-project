@@ -43,17 +43,17 @@
   }
 }
 .products-list {
-  padding-top: 140px;
+  margin-top: 140px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 138px;
+    margin-top: 138px;
   }
 
   @media screen and (min-width: 1280px) {
     justify-content: space-between;
-    padding-top: 258px;
+    margin-top: 258px;
   }
 }
 
@@ -283,7 +283,7 @@
 .products__title-kind {
   margin-bottom: 70px;
 
-  font-family: 'Titan One';
+  font-family: 'Titan One', Tahoma, sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
@@ -353,8 +353,11 @@
     width: 280px;
     margin-top: 25vh;
     
-    background-color: #C94E6B;
     border-radius: 24px;
+
+    transition-property: scale(1) rotate(0);
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 768px) {
         padding-top: 118px;
@@ -368,8 +371,12 @@
     }
 }
 
-.first-content-card {
-    background-color: #C94E6B;
+.modal-products.is-hidden .modal-products__content {
+  transform: scale(0) rotate(-180deg);
+}
+
+.first-content-card {  
+  background-color: #C94E6B;
 }
 
 .second-content-card {
