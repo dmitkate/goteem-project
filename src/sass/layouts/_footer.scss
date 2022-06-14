@@ -1,5 +1,4 @@
 .footer {
-  border-bottom: 1px solid var(--border-in);
   padding-top: 48px;
   background-color: var(--section-rose);
   .section-header {
@@ -92,6 +91,7 @@
   color: var(--text-accent);
 }
 .footer-colpywrite {
+  border-top: 1px solid var(--border-in);
   padding-bottom: 20px;
   padding-top: 16px;
   background-color: var(--section-rose);
