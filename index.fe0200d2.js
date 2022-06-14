@@ -1,0 +1,2 @@
+(()=>{const d={openModalBtn:document.querySelector("[data-modal-open-products-third]"),closeModalBtn:document.querySelector("[data-modal-close-products-third]"),modal:document.querySelector("[data-modal-products-third]")};function o(){d.modal.classList.toggle("is-hidden")}d.openModalBtn.addEventListener("click",o),d.closeModalBtn.addEventListener("click",o)})();
+//# sourceMappingURL=index.fe0200d2.js.map
