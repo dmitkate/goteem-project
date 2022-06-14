@@ -1,34 +1,45 @@
 .location {
     width: 100%;
     background-image: linear-gradient(to bottom,
-            #ffffff 25%,
-            #FFF5F6 25%,
-            #FFF5F6 75%,
+            var(--text-main) 25%,
+            var(--section-rose) 25%,
+            var(--section-rose) 75%,
         );
     &__list{
+        
         margin-bottom: 32px;
+        
         @media screen and (min-width: 768px) {
                 display: flex;
                 margin-left: -32px;
                 margin-bottom: 40px;
-            }
+                
+        }
         @media screen and (min-width: 1280px) {
                 margin-bottom: 60px;
-                }
+        }
     }
     &__item{
-        &:not(:last-child) {
-                margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        &:not(:last-child){
+        margin-bottom: 20px;}
+        @media screen and (min-width: 480px) {
+                max-width: 450px;
+                
             }
         @media screen and (min-width: 768px) {
         width: calc(100% / 3 - 32px);
         margin-left: 32px;
-        margin-bottom: 0;
+        
+        &:not(:last-child) {
+                margin-bottom: 0px;
+            }
         }
-    }
+}
 
     &__content {
-        background-color: #fff;
+        background-color: var(--text-main);
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
         padding: 40px 32px 40px 32px;
@@ -36,7 +47,7 @@
     }
 
     &__category {
-        color: #fff;
+        color: var(--text-main);
         font-weight: 500;
         font-size: 12px;
         line-height: 1.86;
@@ -101,7 +112,7 @@
         &::after {
             content: '';
             display: block;
-            background-color: #E1E1E1;
+            background-color: var(--border-in);
             height: 1px;
             width: 100%;
             position: absolute;
@@ -114,7 +125,7 @@
     }
 
     &__workingdays {
-        color: #000;
+        color: var(--paragraf-black);
         font-weight: 500;
         font-size: 12px;
         line-height: 1.86;
@@ -166,7 +177,7 @@
         &::before {
             content: '';
             display: block;
-            background-color: #E1E1E1;
+            background-color: var(--border-in);
             height: 1px;
             width: 100%;
             position: absolute;
@@ -224,11 +235,11 @@
     }
 
 .location__btn--dark {
-        color: #fff;
-        background-color: #D41342;
+        color: var(--text-main);
+        background-color: var(--bg-btn);
         margin-bottom: 10px;
         &:hover, &:focus {
-            background-color: #C7133E;
+            background-color: var(--bg-btn-hover-red);
             }
         @media screen and (min-width:768px) {
             margin-bottom: 0;
@@ -238,20 +249,47 @@
 
 .location__btn--light {
         color: var(--text-accent);
-        background-color: #fff;
+        background-color: var(--text-main);
         &:hover, &:focus {
-            background-color: #ECEBEB;
+            background-color: var(--bg-btn-hover-white);
         } 
     }
 
 .vector {
-    fill: #ffffff;
+    fill: var(--text-main);
     margin-left: 13px;
 }
 .vector-light{
     fill: var(--text-accent);
     margin-left: 13px;
 }
+
+.modal-close-icon {
+        
+    fill: currentColor ;
+}
+
+.location-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    color: var(--bg-btn);
+    padding: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+        background-color: var(--text-accent);
+        color: #fff;
+    }}
+
+
 /*-------------------modal franchise----------------*/
 .is-hidden {
     opacity: 0;
@@ -261,43 +299,33 @@
 
 .modal-franchise{
     width: 90%;
-    background-color: #FFF5F6;
+    max-height: 100%;
+    background-color: var(--section-rose);
     padding: 28px;
     overflow: scroll;
     border-radius: 24px;
     position: relative;
     @media screen and (min-width:320px) {
-        width: 320px;
-        height: 650px;
-    }
+        width: 320px;}
+        
     @media screen and (min-width:768px) {
         width: 400px;
-        height: 650px;
+        
     }
     @media screen and (min-width:1280px) {
         width: 500px;
-        height: 600px;
+        
     }
 }
-.franchise-close-btn{
-    width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        background-color: #ffffff;
-        position: absolute;
-        top: 8px;
-        right: 8px;
-        padding: 6px;
-}
+
 .franchise__title{
-    font-family: 'Titan One';
+    font-family: 'Titan One', 'DM Sans';
         font-size: 34px;
         line-height: 1.15;
         letter-spacing: 0.04em;
         text-transform: uppercase;
         text-align: center;
-        color: #D41443;
+        color: var(--bg-btn);
         margin-bottom: 20px;
 }
 .franchise__text{
@@ -305,7 +333,7 @@
         font-size: 12px;
         line-height: 1.62;
         text-align: center;
-        color: #000000;
+        color: var(--paragraf-black);
         margin-bottom: 20px;
         @media screen and (min-width:1280px) {
             font-size: 16px;
@@ -335,7 +363,7 @@
     padding: 16px;
 }
 .franchise__category {
-    color: #fff;
+    color: var(--text-main);
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
@@ -375,7 +403,7 @@
     }
 }
 .franchise__price{
-    font-family: 'Titan One';
+    font-family: 'Titan One','DM Sans';
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -383,12 +411,11 @@
         text-align: center;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-    
-        color: #FFA5BA;
+        color: var(--href-top);
         
 }
 .franchise__call{
-    font-family: 'Titan One';
+    font-family: 'Titan One', 'DM Sans';
         font-style: normal;
         font-weight: 400;
         font-size: 30px;
@@ -396,8 +423,7 @@
         text-align: center;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-    
-        color: #FFA5BA;
+        color: var(--href-top);
         margin-bottom: 20px;
 }
 .franchise__phone{
@@ -413,7 +439,8 @@
 /*-----------------modal location------------*/
 .modal-location {
     width: 90%;
-    background-color: #FFF5F6;
+    max-height: 100%;
+    background-color: var(--section-rose);
     padding: 28px;
     overflow: scroll;
     border-radius: 24px;
@@ -421,53 +448,38 @@
 
     @media screen and (min-width:320px) {
             width: 320px;
-            height: 650px;
+            
         }
     
         @media screen and (min-width:768px) {
             width: 400px;
-            height: 650px;
         }
     
         @media screen and (min-width:1280px) {
             width: 500px;
-            height: 600px;
+        
         }
 }
-.map-close-btn{
-    width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        background-color: #ffffff;
-        position: absolute;
-        top: 8px;
-        right: 8px;
-        padding: 6px;
-}
+
 .map__title{
-    font-family: 'Titan One';
+    font-family: 'Titan One', 'DM Sans';
         font-size: 34px;
         line-height: 1.15;
         letter-spacing: 0.04em;
         text-transform: uppercase;
         text-align: center;
-        color: #D41443;
+        color: var(--text-accent);
         margin-bottom: 20px;
 }
-.map__list{
-    list-style-type: disc;
-    list-style: black ;
-}
+
 .map__item{
-    background-color: #fff;
     &:not(:last-child){
         margin-bottom: 20px;
     }
 
 }
 .map__content{
-    background-color: #fff;
+    background-color: var(--text-main);
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
         padding: 16px;
@@ -478,13 +490,13 @@
         line-height: 1.86;
         letter-spacing: 0.04em;
         text-decoration: underline;
-        color: #000;
+        color: var(--paragraf-black);
 }
 .map__text{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.03em;
-    color: #000;
+    color: var(--paragraf-black);
 }
 .map__adress{
     color: var(--paragraf-grey);
