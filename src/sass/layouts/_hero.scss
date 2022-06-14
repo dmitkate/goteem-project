@@ -337,3 +337,101 @@
     right: 16px;
   }
 }
+/*--------------модалка-герой------------------*/
+.backdrop-hero {
+  opacity: 1;
+  z-index: 101;
+}
+.backdrop-hero.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.backdrop-hero.is-hidden .hero-modal {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.hero-modal {
+  overflow: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  max-height: 100%;
+  background-color: var(--href-top);
+  width: 300px;
+  padding: 30px 10px;
+  z-index: 105;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 20px;
+  @media screen and (min-width: 768px) {
+    padding: 115px 105px;
+    width: 700px;
+  }
+}
+.hero-modal__close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  &::before,
+  &::after {
+    position: absolute;
+    content: ' ';
+    height: 13.57px;
+    width: 2px;
+    background-color: var(--text-main);
+    top: 50%;
+    left: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  &:hover::before,
+  &:hover::after {
+    background-color: var(--text-accent);
+  }
+}
+
+.hero-modal__label {
+  font-size: 16px;
+  color: var(--text-main);
+  display: block;
+  text-align: center;
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    font-size: 25px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+  }
+}
+.hero-modal__header {
+  text-align: center;
+  color: var(--text-main);
+  font-size: 24px;
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    font-size: 38px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+}
+.hero-modal__paragraf {
+  text-align: center;
+  font-size: 12px;
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+}
