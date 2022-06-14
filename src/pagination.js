@@ -1,5 +1,5 @@
-$(document).ready(function() {
-  $('.your-class').slick({
+$(function() {
+  $('.slider').slick({
     dots: true,
     dotsClass: "my-dots",
     arrows:false,
