@@ -228,14 +228,12 @@
   fill: var(--text-accent);
 }
 
-.desktop-menu {
-  @media screen and (max-width: 1279px) {
-    display: none;
-  }
-}
 
 .desktop-menu_list {
   display: flex;
+  @media screen and (max-width: 1279px) {
+      display: none;
+}
 }
 
 .desktop-menu_item:not(:last-child) {
@@ -305,7 +303,7 @@
   right: 18px;
 
   @media screen and (min-width: 768px) {
-    top: 28px;
+    top: 18px;
     right: 28px;
   }
 
