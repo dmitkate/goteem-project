@@ -2,11 +2,11 @@
   background-color: var(--section-rose);
   padding-bottom: 80px;
   @media screen and (min-width: 768px) {
-      padding-bottom: 84px;
-    }
-    @media screen and (min-width: 768px) {
-      padding-bottom: 84px;
-    }
+    padding-bottom: 84px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 120px;
+  }
   &__list {
     list-style: none;
     width: 280px;
@@ -111,11 +111,11 @@
   &__item {
     width: 230px;
     @media screen and (min-width: 767px) {
-        width: 180px;
-      }
-      @media screen and (min-width: 1280px) {
-        width: 280px;
-      }
+      width: 180px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 280px;
+    }
     &:not(:last-child) {
       margin-bottom: 32px;
       @media screen and (min-width: 767px) {

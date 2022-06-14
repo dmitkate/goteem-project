@@ -1,5 +1,5 @@
 .gallery {
-  // margin-bottom: 80px;
+  padding-bottom: 80px;
 
   transform: scale(1);
   z-index: 0;
@@ -8,7 +8,9 @@
     var(--section-rose) 40%,
     var(--text-main) 40%
   );
-
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 120px;
+  }
   &__row {
     display: flex;
     align-items: flex-start;

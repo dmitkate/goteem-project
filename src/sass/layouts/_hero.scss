@@ -66,11 +66,10 @@
 
 .hero__title-text {
   position: relative;
-  padding-top: 194px;
-  width: 218px;
+  margin-top: 194px;
   width: 218px;
   font-weight: 400;
-  font-family: 'Titan One';
+  font-family: 'Titan One', sans-serif;
 
   font-size: 26px;
   line-height: 1.15;
@@ -82,14 +81,14 @@
     width: 162px;
     font-size: 22px;
     line-height: 1.13;
-    padding-top: 102px;
+    margin-top: 102px;
   }
   @media screen and (min-width: 1280px) {
     width: 278px;
     z-index: 0;
     font-size: 38px;
     line-height: 1.16;
-    padding-top: 147px;
+    margin-top: 147px;
   }
 }
 
@@ -193,7 +192,7 @@
 }
 
 .hero__points-item {
-  display: flex;
+  //display: flex;
   position: relative;
   &:first-child {
     margin-bottom: 16px;
@@ -305,14 +304,14 @@
 .hero__arrow-wrap {
   max-width: 114px;
   color: #ffffff;
-  padding-top: 40px;
+  margin-top: 40px;
   font-size: 8px;
   line-height: 1.5;
   @media screen and (min-width: 1280px) {
     font-size: 14px;
     line-height: 1.4;
     min-width: 200px;
-    padding-top: 70px;
+    margin-top: 70px;
   }
 }
 
