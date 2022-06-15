@@ -1,1 +1,0 @@
-{"mappings":"AAAAA,GAAE,WACAA,EAAE,WAAWC,MAAM,CACjBC,MAAM,EACNC,UAAW,UACXC,QAAO","sources":["src/pagination.js"],"sourcesContent":["$(function() {\n  $('.slider').slick({\n    dots: true,\n    dotsClass: \"my-dots\",\n    arrows:false,\n  });\n});\n"],"names":["$","slick","dots","dotsClass","arrows"],"version":3,"file":"index.6ffb1adf.js.map"}
