@@ -280,6 +280,9 @@
   background: transparent;
   background-color: #d9d9d9;
   border-radius: 50%;
+  &:hover{
+    background-color: #c7133e;
+  }
 }
 .my-dots li button:before {
   position: absolute;
