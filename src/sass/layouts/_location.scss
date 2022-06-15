@@ -260,11 +260,17 @@
 
 .vector {
   fill: var(--text-main);
-  margin-left: 13px;
-}
+  margin-left: 8px;
+  @media screen and (min-width: 768px)
+    {margin-left: 13px;}
+  }
+
 .vector-light {
   fill: var(--text-accent);
-  margin-left: 13px;
+  margin-left: 12px;
+  @media screen and (min-width: 768px)
+    {margin-left: 13px;}
+
 }
 
 .modal-close-icon {
